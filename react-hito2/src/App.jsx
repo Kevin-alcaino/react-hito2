@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
-import './App.css'
 import HomePages from './pages/HomePages'
 import FormularioPages from './pages/FormularioPages'
+import './App.css'
 
 function App() {
   return (
@@ -13,3 +13,4 @@ function App() {
 }
 
 export default App
+
