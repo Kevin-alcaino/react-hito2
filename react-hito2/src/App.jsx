@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import HomePages from './pages/HomePages'
 import FormularioPages from './pages/FormularioPages'
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

@@ -26,7 +26,7 @@ const addToCart = (pizza) => {
   
   return (
     <>
-      <Navbar cart={cart} />
+      <Navbar/>
       <Header />
       <Hero />
       <div className="cont-producto">
