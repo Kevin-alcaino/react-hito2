@@ -1,4 +1,4 @@
-function CardPizza({ img, name, description, price, onnAddToCart }) {
+function CardPizza({ img, name, description, price, onAddToCart }) {
 
   const formatCLP = (value) => value.toLocaleString('es-CL');
  
@@ -9,7 +9,7 @@ function CardPizza({ img, name, description, price, onnAddToCart }) {
       <h4>{name}</h4>
       <p>{description}</p>
       <p>Precio: ${formatCLP(price)}</p>
-      <button onClick={onnAddToCart}>
+      <button onClick={onAddToCart}>
         Agregar al Carrito
       </button>
     </div>
