@@ -1,56 +1,46 @@
+import { Link } from "react-router-dom";
+
 function Navbar({ cart = [] }) {
-  
   const token = false; 
-  const total = cart.reduce((acc, item) => acc + item.price, 0);
-  const formatCLP = (value) => value.toLocaleString('es-CL');
+
+  const total = cart.reduce((acc, item) => acc + (item.price || 0), 0);
+  const formatCLP = (value) => value.toLocaleString("es-CL");
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark px-4" style={{ backgroundColor: '#fa6540' }}>
-      <div className="container-fluid">
-        <a className="navbar-brand fw-bold" href="#">
-          
-        </a>
-        
-        <button 
-          className="navbar-toggler" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#navbarNav"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+   <nav 
+  className="navbar navbar-expand-lg navbar-dark px-3" 
+  style={{ backgroundColor: '#fa6540' }}
+>
+      <div className="container-fluid d-flex justify-content-between align-items-center">
+        <div className="d-flex gap-2 align-items-center">
+          <Link to="/" className="navbar-brand me-3 text-white text-decoration-none">
+          </Link>
 
-        <div className="collapse navbar-collapse justify-content-between" id="navbarNav">
-          <ul className="navbar-nav mb-2 mb-lg-0">
-            <li className="nav-item">
-              <button className="btn btn-outline-light btn-sm me-2">🍕 Home</button>
-            </li>
-            {token ? (
-              <>
-                <li className="nav-item">
-                  <button className="btn btn-outline-light btn-sm me-2">🔓 Profile</button>
-                </li>
-                <li className="nav-item">
-                  <button className="btn btn-outline-light btn-sm">🔒 Logout</button>
-                </li>
-              </>
-            ) : (
-              <>
-                <li className="nav-item">
-                  <button className="btn btn-outline-light btn-sm me-2">🔐 Login</button>
-                </li>
-                <li className="nav-item">
-                  <button className="btn btn-outline-light btn-sm">🔐 Register</button>
-                </li>
-              </>
-            )}
-          </ul>
+          <Link to="/" className="btn btn-outline-light btn-sm">🍕 Home</Link>
 
-          <div className="d-flex">
-            <button className="btn btn-outline-warning text-white">
-              🛒 Total: ${formatCLP(total)}
-            </button>
-          </div>
+          {token ? (
+            <>
+              <button className="btn btn-outline-light btn-sm">
+                🔓 Profile
+              </button>
+              <button className="btn btn-outline-light btn-sm">
+                🔒 Logout
+              </button>
+            </>
+          ) : (
+            <>
+              <button className="btn btn-outline-light btn-sm">
+                🔐 Login
+              </button>
+             <Link to="/formulario" className="btn btn-outline-light btn-sm">🔐 Register</Link>
+            </>
+          )}
+        </div>
+
+        <div className="d-flex">
+          <button className="btn btn-outline-info text-info">
+            🛒 Total: ${formatCLP(total)}
+          </button>
         </div>
       </div>
     </nav>
