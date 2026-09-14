@@ -6,12 +6,12 @@ import Footer from "../components/Footer";
 
 
 // Imágenes.
-import margarita from '../assets/margarita.png';
-import marina from '../assets/marina.png';
-import veggie from '../assets/veggie.png';
-import carbonara from '../assets/carbonara.png';
-import caprichoza from '../assets/caprichoza.png';
-import prociutto from '../assets/prociutto.png';
+import margarita from "../assets/margarita.png";
+import marina from "../assets/marina.png";
+import veggie from "../assets/veggie.png";
+import carbonara from "../assets/carbonara.png";
+import caprichoza from "../assets/caprichoza.png";
+import prociutto from "../assets/prociutto.png";
 
 function HomePages({ addToCart }) {
   return (
