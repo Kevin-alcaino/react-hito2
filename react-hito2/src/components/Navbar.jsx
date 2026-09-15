@@ -38,7 +38,7 @@ function Navbar({ cart = [] }) {
         </div>
 
         <div className="d-flex">
-          <button className="btn btn-outline-info text-info">
+          <button className="btn btn-outline-light text-info">
             🛒 Total: ${formatCLP(total)}
           </button>
         </div>

@@ -77,20 +77,18 @@ footer {
 .formulario{
 display: flex;
 flex-direction: column;
-display: flex;
-justify-content: center;
+justify-content: baseline;
+padding-top: 150px;
 align-items: center;
 min-height: 100vh;
 }
 
-fieldset{
-  border: #ccc 2px;
-}
 
-.form-label {
+
+.casillas form{
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   color: black;
 
 }
