@@ -16,15 +16,15 @@ function Navbar({ cart = [] }) {
           <Link to="/" className="navbar-brand me-3 text-white text-decoration-none">
           </Link>
 
-          <Link to="/" className="btn btn-outline-light btn-sm">🍕 Home</Link>
+          <Link to="/" className="btn btn-outline-light btn-sm">🍕 Inicio</Link>
 
           {token ? (
             <>
               <button className="btn btn-outline-light btn-sm">
-                🔓 Profile
+                🔓 Perfil
               </button>
               <button className="btn btn-outline-light btn-sm">
-                🔒 Logout
+                🔒 Registro
               </button>
             </>
           ) : (

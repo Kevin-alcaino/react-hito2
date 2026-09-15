@@ -73,19 +73,25 @@ footer {
 }
 
 /*Formulario*/
+
 .formulario{
 display: flex;
-flex-direction: row;
+flex-direction: column;
 display: flex;
 justify-content: center;
 align-items: center;
 min-height: 100vh;
 }
 
-.form-container {
+fieldset{
+  border: #ccc 2px;
+}
+
+.form-label {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: black;
 
 }
 
