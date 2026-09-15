@@ -54,7 +54,7 @@ import Footer from "../components/Footer";
         id="contrasena" 
         value={contrasena} 
         onChange={(e) => setContrasena(e.target.value)} 
-        placeholder="Minimo 6 carcteres"
+        placeholder="Ingrese su contraseña"
         required />
          
         <button type="submit">Iniciar Sesión</button>
