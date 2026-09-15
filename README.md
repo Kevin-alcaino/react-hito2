@@ -14,8 +14,19 @@ Aplicación web desarrollada en React y Vite para la pizzería "Il Tomaco", este
 
 **`reduce()`** Método de array para procesar los elementos del carrito y calcular la suma total de las compras de forma dinámica.
 
-**toLocaleString("es-CL")`** Función de JavaScript utilizada en formatCLP para dar formato de moneda chilena a los valores numéricos.
+**`toLocaleString("es-CL")`** Función de JavaScript utilizada en formatCLP para dar formato de moneda chilena a los valores numéricos.
 
+
+### 🛣️ Uso de Rutas con React Router DOM
+
+La aplicación utiliza `react-router-dom` para gestionar la navegación entre páginas sin recargar el navegador (Single Page Application):
+
+* **`<BrowserRouter>`**: Envuelve la aplicación para habilitar el historial de navegación.
+* **`<Routes>` y `<Route>`**: Definen la correspondencia entre la URL actual y el componente que debe renderizarse.
+  * `/`: Carga la página principal (`HomePages`).
+  * `/login`: Muestra el formulario de inicio de sesión (`LoginPages`).
+  * `/formulario`: Muestra la vista de registro (`FormularioPages`).
+* **`<Link to="...">`**: Sustituye a las etiquetas `<a>` tradicionales dentro de componentes como `Navbar` para realizar transiciones de rutas.
 
 ## 🛠 Tecnologías implementadas
 
