@@ -57,7 +57,7 @@ import Footer from "../components/Footer";
         placeholder="Ingrese su contraseña"
         required />
          
-        <button type="submit">Iniciar Sesión</button>
+        <button type="submit" className="boton">Iniciar Sesión</button>
 
         </form>
 

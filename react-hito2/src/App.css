@@ -73,6 +73,10 @@ footer {
 }
 
 /*Login*/
+h1{
+padding-bottom: 35px;
+}
+
 
 .login{
   display: flex;
@@ -88,6 +92,7 @@ min-height: 100vh;
   flex-direction: column;
   justify-content: center;
   color: black;
+
 }
 
 /*Formulario*/

@@ -31,7 +31,7 @@ function Navbar({ cart = [] }) {
           ) : (
             <>
               <Link to="/login" className="btn btn-outline-light btn-sm">
-                🔐 Login
+                🔐 Ingresar
               </Link>
               <Link to="/formulario" className="btn btn-outline-light btn-sm">🔐 Registo</Link>
             </>
