@@ -1,3 +1,10 @@
+/* Botones */
+.btn{
+  border-radius: 15px;
+  padding: 15px 0 10px;
+
+}
+
 /* Header */
 .header {
   background-color: #fa6540;
@@ -7,6 +14,19 @@
   font-weight: bold;
   margin: 0;
   
+}
+
+/* Navbar */
+
+nav{
+   background-color: #fa6540;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10PX 20px;
+  gap: 0 20px 0 20px;
 }
 
 /* Hero */
@@ -106,13 +126,23 @@ align-items: center;
 min-height: 100vh;
 }
 
-
-
 .casillas form{
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: black;
+
+}
+
+/* Carrito de compras */
+ 
+.carrito{
+display: flex;
+flex-direction: column;
+justify-content: baseline;
+padding-top: 150px;
+align-items: center;
+min-height: 100vh;
 
 }
 

@@ -30,16 +30,16 @@ function Cart({ cart = [], setCart }) {
 
         {cart.map((pizza) => (
           <div key={pizza.id}>
-            <img src={pizza.img} alt={pizza.name} width="60" />
+            <img src={pizza.img} alt={pizza.name} width="250" />
             <div>
               <h5>{pizza.name}</h5>
               <p>${formatCLP(pizza.price)}</p>
             </div>
 
             <div>
-              <button onClick={() => restar(pizza.id)}>-</button>
+              <button className= "btn" onClick={() => restar(pizza.id)}>-</button>
               <span>{pizza.count || 1}</span>
-              <button onClick={() => sumar(pizza.id)}>+</button>
+              <button className= "btn" onClick={() => sumar(pizza.id)}>+</button>
             </div>
           </div>
         ))}
