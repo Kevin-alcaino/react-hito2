@@ -13,9 +13,7 @@ function Cart({ cart = [], setCart }) {
   const restar = (id) => {
     setCart(
       cart
-        .map(item => item.id === id ? { ...item, count: (item.count || 1) - 1 } : item)
-        .filter(item => item.count > 0)
-    );
+        .map(item => item.id === id ? { ...item, count: (item.count || 1) - 1 } : item));
   };
 
   // Total de la compra
